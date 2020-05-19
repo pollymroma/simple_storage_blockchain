@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <!-- ver si sirve meter webpack y bootstrap asi -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script src="bundle.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div cass="ro2">
+                <div clas="col-sm-12">
+                    <h1>Simple Storage</h1>
+                    <form id="setData">
+                        <div class="form-group">
+                            <label for="setDataInput">Set data (number)</label>
+                            <input id="setDataInput" type="number" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <div>Data: <span id="data"></span></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

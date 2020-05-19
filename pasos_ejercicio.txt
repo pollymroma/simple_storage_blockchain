@@ -1,0 +1,30 @@
+CLASE 8 - PRACTICA - SimpleStore
+
+1. Generar el proyecto. truffle init
+Estructura: contracts, migrations, test, truffe-config
+2. Se trae cosas ya armadas: un package.json y arma la carpeta src (para el frontend)
+Tambien trae un index.html y la libreria web3.js, las mete en el src.
+3. html: un form para settearle un numero y mandarlo. Luego hara un get.
+4. Escribimos el contrato. SimpleStorage.sol
+5. Generamos migrations del contrato anterior.
+6. Compilo desde consola: en el directorio.
+truffle compile
+(va a migrations para ver que compilar y tiene las referencias a los contratos)
+Nos crea el build con toda la metadata.
+Levanto ganache: truffle develop. Tengo la cuentas y donde va a correr
+migrate --reset y veo info que esta en la metada.
+7. Frontend: en index.html
+8. en src creamos bundle.js con el ABI. le metemos lo del build, el json, agarro el abi.
+Tambien agregamos la direccion del contrato, que saco del migrate.
+Agrego instancia de web3.
+Instancia de web3.eth con abi y address.
+El bundle.js conecta frontend con backend.
+9. Escribimos el resto del bundle.js. javascript, codigo. y html.
+Usamos promesas y callbacks.
+Promise: objeto que representa que terminó una operacion asincrona. Bien o mal.
+Las operaciones de transacciones son asincronas. Por eso usamos promesas.
+Conectamos con los metodos de la blockchain.
+10. npm install static-server luego npm start. Luego veo html en el localhost:9080
+
+
+Y listo.
